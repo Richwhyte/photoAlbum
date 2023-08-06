@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navBar</title>
+    <link rel="stylesheet" href="jbutton.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="toggleBox">
+        <span class="icon">
+        </span>
+        </a>
+        <ul  class="navItems">
+            <li>
+                <a href="#">
+                    <i class="fa fa-home"
+                     style="--i:1">  </i>
+                     <span style="--g:1">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"
+                     style="--i:2">  </i>
+                     <span style="--g:2">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-folder"
+                     style="--i:3">  </i>
+                     <span style="--g:3">Portfolio</span>
+                </a>
+            </li>
+    </div>
+    <script>
+        
+        var toggleClick=document.querySelector(".toggleBox");
+        var container=document.querySelector(".container");
+        toggleClick.addEventListener('click', ()=>{
+            toggleClick.classList.toggle('active');
+            container.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
